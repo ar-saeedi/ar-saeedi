@@ -150,14 +150,6 @@ I'm a passionate **Full Stack Developer** with expertise in modern web technolog
 
 ---
 
-## 🎵 Currently Listening To
-
-<div align="center">
-
-[![Spotify](https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/user/your-spotify-username)
-
-*"Code is poetry written in logic"* - Anonymous
-
 </div>
 
 ---
