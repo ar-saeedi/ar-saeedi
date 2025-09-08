@@ -6,7 +6,7 @@
 ![GitHub Followers](https://img.shields.io/github/followers/ar-saeedi?style=for-the-badge&color=00ff88&label=Followers)
 ![GitHub Stars](https://img.shields.io/github/stars/ar-saeedi?style=for-the-badge&color=00ff88&label=Stars)
 
-**Ai/ML & FullStack Developer**
+**AI/ML & Full Stack Developer**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-00ff88?style=for-the-badge&logo=vercel&logoColor=white)](https://alireza-saeedi-portfolio-dgfy1jpre-alirezasaeedis-projects.vercel.app)
 [![Email](https://img.shields.io/badge/Email-Contact-00d4aa?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Alirezasaeediofficial@gmail.com)
@@ -18,26 +18,39 @@
 
 ## 🚀 About Me
 
-```rust
-fn main() {
-    let mut developer = Developer::new("Alireza Saeedi");
+```python
+class Developer:
+    def __init__(self, name="Alireza Saeedi"):
+        self.name = name
+        self.role = "AI/ML & Full Stack Developer"
+        self.specialties = [
+            "AI/ML Development",
+            "Rust & WebAssembly", 
+            "Game Engine Development",
+            "WebGL & Graphics Programming",
+            "Python & JavaScript"
+        ]
+        self.passion = "Building intelligent, high-performance applications"
     
-    developer
-        .set_role("Full Stack Developer")
-        .add_specialty("Rust & WebAssembly")
-        .add_specialty("Game Engine Development")
-        .add_specialty("WebGL & Graphics Programming")
-        .set_passion("Building high-performance applications");
-    
-    println!("{}", developer.introduce());
-}
+    def introduce(self):
+        return f"Hi! I'm {self.name}, a {self.role} passionate about {self.passion}"
+
+developer = Developer()
+print(developer.introduce())
 ```
 
-I'm a passionate **Full Stack Developer** with expertise in modern web technologies and systems programming. I specialize in creating high-performance applications using **Rust**, **WebAssembly**, and **JavaScript**. My journey includes building game engines, web platforms, and landing pages that deliver exceptional user experiences.
+I'm a passionate **AI/ML & Full Stack Developer** with expertise in modern web technologies, artificial intelligence, and systems programming. I specialize in creating intelligent, high-performance applications using **Python**, **Rust**, **WebAssembly**, and **JavaScript**. My journey includes building AI-powered developer tools, game engines, web platforms, and machine learning solutions that deliver exceptional user experiences.
 
 ---
 
 ## 🛠️ Tech Stack
+
+### **AI/ML & Data Science**
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 
 ### **Languages & Frameworks**
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
@@ -56,6 +69,7 @@ I'm a passionate **Full Stack Developer** with expertise in modern web technolog
 ### **Backend & Databases**
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
@@ -68,6 +82,20 @@ I'm a passionate **Full Stack Developer** with expertise in modern web technolog
 ---
 
 ## 🎮 Featured Projects
+
+### 🤖 [AI Developer Productivity Suite](https://github.com/ar-saeedi/ai-developer-productivity-suite)
+**Professional AI-Powered Developer Productivity Suite - Interactive web app for code analysis, security scanning, performance profiling, Git optimization & automated documentation**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![AI](https://img.shields.io/badge/AI-FF6F00?style=flat&logo=tensorflow&logoColor=white)
+![Web](https://img.shields.io/badge/Web-61DAFB?style=flat&logo=react&logoColor=white)
+
+- **AI Code Intelligence** - Smart code analysis and optimization suggestions
+- **Security Scanner** - AI-powered vulnerability detection and dependency analysis
+- **Performance Profiler** - Real-time monitoring and bottleneck detection
+- **Smart Git Assistant** - AI-generated commit messages and workflow automation
+- **Automated Documentation** - Auto-generate comprehensive code documentation
+- **Project Optimizer** - Smart dependency management and build optimization
 
 ### 🚀 [WASM Game Engine](https://github.com/ar-saeedi/wasm-game-engine)
 **High-performance 2D game engine built with Rust + WebAssembly**
@@ -89,7 +117,7 @@ I'm a passionate **Full Stack Developer** with expertise in modern web technolog
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-### 🏢 [Laitech Komiteh](https://github.com/KavinPishro/laitech-komiteh)
+### �� [Laitech Komiteh](https://github.com/KavinPishro/laitech-komiteh)
 **Committee management platform for efficient team collaboration**
 
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
@@ -105,7 +133,7 @@ I'm a passionate **Full Stack Developer** with expertise in modern web technolog
 
 ---
 
-## 📊 GitHub Stats
+## �� GitHub Stats
 
 <div align="center">
 
@@ -121,19 +149,21 @@ I'm a passionate **Full Stack Developer** with expertise in modern web technolog
 
 ## 🎯 What I'm Working On
 
+- 🤖 **AI/ML Development** - Building intelligent applications and developer tools
 - 🔥 **Game Engine Development** - Building next-generation web game engines
 - ⚡ **WebAssembly Optimization** - Pushing the boundaries of web performance
-- 🎨 **WebGL Graphics** - Creating stunning visual experiences
-- 🚀 **Full-Stack Applications** - Building scalable web platforms
+- �� **WebGL Graphics** - Creating stunning visual experiences
+- 🚀 **Full-Stack Applications** - Building scalable web platforms with AI integration
 
 ---
 
-## 💡 Fun Facts
+## �� Fun Facts
 
+- 🤖 **AI Enthusiast** - Love building intelligent applications and developer tools
 - 🎮 **Game Enthusiast** - Love building and playing games
 - 🦀 **Rust Advocate** - Passionate about memory safety and performance
 - 🌐 **Web Performance** - Obsessed with optimizing web applications
-- 🎨 **Creative Coder** - Enjoy combining art and technology
+- �� **Creative Coder** - Enjoy combining art, technology, and AI
 
 ---
 
@@ -150,12 +180,7 @@ I'm a passionate **Full Stack Developer** with expertise in modern web technolog
 
 ---
 
-</div>
-
----
-
 <div align="center">
-
 
 **⭐ Star my repositories if you find them interesting!**
 
