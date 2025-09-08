@@ -164,9 +164,6 @@ I'm a passionate **Full Stack Developer** with expertise in modern web technolog
 
 <div align="center">
 
-### 🚀 **Ready to build something amazing together?**
-
-![Profile Snake](https://github.com/ar-saeedi/ar-saeedi/blob/output/github-contribution-grid-snake.svg)
 
 **⭐ Star my repositories if you find them interesting!**
 
