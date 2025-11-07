@@ -1,0 +1,306 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="33%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="66%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4facfe;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f23;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a3e;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Shooting star animation -->
+    <radialGradient id="starGradient">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGradient)"/>
+  
+  <!-- Stars in background -->
+  <circle cx="100" cy="80" r="1.5" fill="#ffffff" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="120" r="1" fill="#ffffff" opacity="0.5">
+    <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="60" r="1.5" fill="#ffffff" opacity="0.7">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="100" r="1" fill="#ffffff" opacity="0.5">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="70" r="1.5" fill="#ffffff" opacity="0.6">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="720" cy="110" r="1" fill="#ffffff" opacity="0.4">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Shooting stars -->
+  <circle cx="0" cy="50" r="2" fill="url(#starGradient)">
+    <animate attributeName="cx" values="-50;850" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="50;150" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="120" r="2" fill="url(#starGradient)">
+    <animate attributeName="cx" values="-50;850" dur="4s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="cy" values="120;200" dur="4s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" text-anchor="middle" filter="url(#softGlow)">
+    My Coding Journey
+  </text>
+  <text x="400" y="75" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="14" fill="#a0a0ff" text-anchor="middle" opacity="0.8">
+    From beginner to full-stack developer
+  </text>
+  
+  <!-- Journey Path - Curved line -->
+  <path d="M 50 200 Q 150 150, 250 200 T 450 200 Q 550 250, 650 200 L 750 200" 
+        stroke="url(#pathGradient)" 
+        stroke-width="4" 
+        fill="none" 
+        opacity="0.3"
+        stroke-linecap="round"/>
+  
+  <!-- Animated path overlay -->
+  <path d="M 50 200 Q 150 150, 250 200 T 450 200 Q 550 250, 650 200 L 750 200" 
+        stroke="url(#pathGradient)" 
+        stroke-width="4" 
+        fill="none" 
+        filter="url(#glow)"
+        stroke-linecap="round"
+        stroke-dasharray="1500"
+        stroke-dashoffset="1500">
+    <animate attributeName="stroke-dashoffset" from="1500" to="0" dur="4s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Milestone 1: HTML/CSS -->
+  <g id="milestone1">
+    <circle cx="50" cy="200" r="20" fill="#667eea" filter="url(#glow)" opacity="0">
+      <animate attributeName="opacity" values="0;1;1" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="20;22;20" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <text x="50" y="206" font-family="Arial" font-size="20" fill="#ffffff" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;1;1" dur="4s" repeatCount="indefinite"/>
+      📄
+    </text>
+    <text x="50" y="240" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#667eea" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;1;1" dur="4s" repeatCount="indefinite"/>
+      HTML/CSS
+    </text>
+    <text x="50" y="255" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="10" fill="#a0a0ff" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;1;1" dur="4s" repeatCount="indefinite"/>
+      2020
+    </text>
+  </g>
+  
+  <!-- Milestone 2: JavaScript -->
+  <g id="milestone2">
+    <circle cx="200" cy="175" r="20" fill="#f093fb" filter="url(#glow)" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="20;22;20" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <text x="200" y="181" font-family="Arial" font-size="20" fill="#ffffff" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      ⚡
+    </text>
+    <text x="200" y="155" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#f093fb" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      JavaScript
+    </text>
+    <text x="200" y="140" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="10" fill="#a0a0ff" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      2021
+    </text>
+  </g>
+  
+  <!-- Milestone 3: React -->
+  <g id="milestone3">
+    <circle cx="350" cy="200" r="20" fill="#4facfe" filter="url(#glow)" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="20;22;20" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+    <text x="350" y="206" font-family="Arial" font-size="20" fill="#ffffff" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      ⚛️
+    </text>
+    <text x="350" y="240" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#4facfe" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      React
+    </text>
+    <text x="350" y="255" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="10" fill="#a0a0ff" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      2022
+    </text>
+  </g>
+  
+  <!-- Milestone 4: Backend -->
+  <g id="milestone4">
+    <circle cx="500" cy="175" r="20" fill="#764ba2" filter="url(#glow)" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="20;22;20" dur="2s" repeatCount="indefinite" begin="2s"/>
+    </circle>
+    <text x="500" y="181" font-family="Arial" font-size="20" fill="#ffffff" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      🔧
+    </text>
+    <text x="500" y="155" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#764ba2" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      Backend
+    </text>
+    <text x="500" y="140" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="10" fill="#a0a0ff" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      2023
+    </text>
+  </g>
+  
+  <!-- Milestone 5: AI/ML -->
+  <g id="milestone5">
+    <circle cx="650" cy="200" r="20" fill="#667eea" filter="url(#glow)" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="20;22;20" dur="2s" repeatCount="indefinite" begin="2.5s"/>
+    </circle>
+    <text x="650" y="206" font-family="Arial" font-size="20" fill="#ffffff" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      🤖
+    </text>
+    <text x="650" y="240" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#667eea" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      AI/ML
+    </text>
+    <text x="650" y="255" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="10" fill="#a0a0ff" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;1;1" dur="4s" repeatCount="indefinite"/>
+      2024
+    </text>
+  </g>
+  
+  <!-- Current position - Animated rocket -->
+  <g id="rocket" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;0;1" dur="4s" repeatCount="indefinite"/>
+    <circle cx="750" cy="200" r="25" fill="#f093fb" filter="url(#glow)">
+      <animate attributeName="r" values="25;28;25" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="750" y="210" font-family="Arial" font-size="28" fill="#ffffff" text-anchor="middle">🚀</text>
+    <text x="750" y="175" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#f093fb" text-anchor="middle">
+      Now
+    </text>
+    <text x="750" y="240" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">
+      Full-Stack
+    </text>
+    <text x="750" y="255" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="10" fill="#a0a0ff" text-anchor="middle">
+      2025
+    </text>
+  </g>
+  
+  <!-- Particle trail following the path -->
+  <circle cx="50" cy="200" r="3" fill="#ffffff" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="4s" repeatCount="indefinite"/>
+    <animateMotion dur="4s" repeatCount="indefinite">
+      <mpath href="#journeyPath"/>
+    </animateMotion>
+  </circle>
+  
+  <path id="journeyPath" d="M 50 200 Q 150 150, 250 200 T 450 200 Q 550 250, 650 200 L 750 200" fill="none"/>
+  
+  <!-- Stats Panel -->
+  <g id="stats">
+    <rect x="50" y="320" width="700" height="140" fill="#1a1a3e" rx="15" opacity="0.6"/>
+    <rect x="50" y="320" width="700" height="140" fill="none" stroke="url(#pathGradient)" stroke-width="2" rx="15" opacity="0.5"/>
+    
+    <!-- Stat 1 -->
+    <g transform="translate(120, 360)">
+      <circle cx="0" cy="0" r="25" fill="#667eea" opacity="0.2"/>
+      <text x="0" y="8" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="bold" fill="#667eea" text-anchor="middle">5+</text>
+      <text x="0" y="45" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="12" fill="#a0a0ff" text-anchor="middle">Years</text>
+      <text x="0" y="60" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="11" fill="#808080" text-anchor="middle">Experience</text>
+    </g>
+    
+    <!-- Stat 2 -->
+    <g transform="translate(280, 360)">
+      <circle cx="0" cy="0" r="25" fill="#f093fb" opacity="0.2"/>
+      <text x="0" y="8" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="bold" fill="#f093fb" text-anchor="middle">50+</text>
+      <text x="0" y="45" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="12" fill="#a0a0ff" text-anchor="middle">Projects</text>
+      <text x="0" y="60" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="11" fill="#808080" text-anchor="middle">Completed</text>
+    </g>
+    
+    <!-- Stat 3 -->
+    <g transform="translate(440, 360)">
+      <circle cx="0" cy="0" r="25" fill="#4facfe" opacity="0.2"/>
+      <text x="0" y="8" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="bold" fill="#4facfe" text-anchor="middle">15+</text>
+      <text x="0" y="45" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="12" fill="#a0a0ff" text-anchor="middle">Technologies</text>
+      <text x="0" y="60" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="11" fill="#808080" text-anchor="middle">Mastered</text>
+    </g>
+    
+    <!-- Stat 4 -->
+    <g transform="translate(600, 360)">
+      <circle cx="0" cy="0" r="25" fill="#764ba2" opacity="0.2"/>
+      <text x="0" y="8" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="bold" fill="#764ba2" text-anchor="middle">∞</text>
+      <text x="0" y="45" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="12" fill="#a0a0ff" text-anchor="middle">Learning</text>
+      <text x="0" y="60" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="11" fill="#808080" text-anchor="middle">Never Stop</text>
+    </g>
+    
+    <!-- Animated progress bars for stats -->
+    <rect x="95" y="405" width="50" height="4" fill="#667eea" rx="2" opacity="0.3"/>
+    <rect x="95" y="405" width="0" height="4" fill="#667eea" rx="2">
+      <animate attributeName="width" values="0;50" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    
+    <rect x="255" y="405" width="50" height="4" fill="#f093fb" rx="2" opacity="0.3"/>
+    <rect x="255" y="405" width="0" height="4" fill="#f093fb" rx="2">
+      <animate attributeName="width" values="0;50" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
+    
+    <rect x="415" y="405" width="50" height="4" fill="#4facfe" rx="2" opacity="0.3"/>
+    <rect x="415" y="405" width="0" height="4" fill="#4facfe" rx="2">
+      <animate attributeName="width" values="0;50" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    
+    <rect x="575" y="405" width="50" height="4" fill="#764ba2" rx="2" opacity="0.3"/>
+    <rect x="575" y="405" width="0" height="4" fill="#764ba2" rx="2">
+      <animate attributeName="width" values="0;50" dur="2s" begin="0.9s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Floating code symbols -->
+  <text x="150" y="350" font-family="monospace" font-size="20" fill="#667eea" opacity="0.3">
+    &lt;/&gt;
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-10; 0,0" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite"/>
+  </text>
+  
+  <text x="650" y="330" font-family="monospace" font-size="18" fill="#4facfe" opacity="0.3">
+    { }
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="2.5s" repeatCount="indefinite"/>
+  </text>
+  
+  <text x="420" y="140" font-family="monospace" font-size="16" fill="#f093fb" opacity="0.3">
+    [ ]
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="2.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="2.8s" repeatCount="indefinite"/>
+  </text>
+</svg>
