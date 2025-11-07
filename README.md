@@ -9,10 +9,6 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://alirezasaeedi.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alirezasaeedi)
 
-<br/>
-
-![Code Snake Game](./snake-game.svg)
-
 </div>
 
 ---
